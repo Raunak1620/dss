@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1054709943505",
+    "firebase_url": "https://dss-49dc3.firebaseio.com",
+    "project_id": "dss-49dc3",
+    "storage_bucket": "dss-49dc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054709943505:android:ca70693c5c1cf3959e89f0",
+        "android_client_info": {
+          "package_name": "com.raunak.dss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054709943505-v69ugl1rb40b561ea0vqatnnfk1hq0rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raunak.dss",
+            "certificate_hash": "9bf91740c191ebadc91d1ffdd1515baec7b791d4"
+          }
+        },
+        {
+          "client_id": "1054709943505-n81m2ps4rg0a3l7vlafave11mio0bnoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCreGQhO6oTBe5AiypPZi7n003Q4JI9_3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054709943505-n81m2ps4rg0a3l7vlafave11mio0bnoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

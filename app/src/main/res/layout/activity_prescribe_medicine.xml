@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".prescribe_medicine">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_image_one_signup" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="40dp"
+        android:paddingTop="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter patient details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/pat_name"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:id="@+id/pat_age"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your Gender"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:id="@+id/pat_gen">
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Male"
+              android:id="@+id/pat_gen_male"
+               />
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Female"
+              android:id="@+id/pat_gen_female"
+              />
+          <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+              android:id="@+id/pat_gen_other"
+                />
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/disease"
+            android:textSize="15dp"
+            android:text="Please Select disease"
+            android:textColor="@color/white"/>
+
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="28dp"
+           android:id="@+id/symptoms"
+           android:layout_toEndOf="@+id/disease"
+           android:spinnerMode="dropdown"
+           android:background="@drawable/spinner_border"
+           />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:id="@+id/pat_address"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:id="@+id/pat_phone"
+            android:textColorHint="@color/white"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/stage"
+                android:textSize="15dp"
+                android:text="Stage of disease"
+                android:textColor="@color/white"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:id="@+id/stage_score"
+                android:layout_toEndOf="@+id/stage"
+                android:background="@drawable/spinner_border"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Suggest Med"
+            android:textColor="@color/white"
+            android:id="@+id/pat_submit"
+            android:background="@drawable/gradient_darkblue"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

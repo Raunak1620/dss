@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>activity_prescribe_medicine.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+.s4 { color: #e8bf6a;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_prescribe_medicine.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;androidx.constraintlayout.widget.ConstraintLayout
+    <span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.prescribe_medicine&quot;</span><span class="s0">&gt;</span>
+
+    &lt;ImageView
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/imageView&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:scaleType</span><span class="s2">=&quot;centerCrop&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@drawable/background_image_one_signup&quot; </span><span class="s0">/&gt;</span>
+
+    &lt;LinearLayout
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:paddingStart</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:paddingTop</span><span class="s2">=&quot;55dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+        <span class="s0">&gt;</span>
+
+        &lt;TextView
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Enter patient details&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s0">/&gt;</span>
+
+        &lt;EditText
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;200dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:hint</span><span class="s2">=&quot;Name&quot;</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_name&quot;</span>
+            <span class="s1">android:textColorHint</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;30dp&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s0">/&gt;</span>
+
+        &lt;EditText
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;200dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:hint</span><span class="s2">=&quot;Age&quot;</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_age&quot;</span>
+            <span class="s1">android:textColorHint</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s1">android:inputType</span><span class="s2">=&quot;number&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s0">/&gt;</span>
+
+        &lt;TextView
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Select your Gender&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span><span class="s0">/&gt;</span>
+
+        &lt;RadioGroup
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:paddingStart</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_gen&quot;</span><span class="s0">&gt;</span>
+          &lt;RadioButton
+              <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+              <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+              <span class="s1">android:text</span><span class="s2">=&quot;Male&quot;</span>
+              <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_gen_male&quot;</span>
+               <span class="s0">/&gt;</span>
+          &lt;RadioButton
+              <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+              <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+              <span class="s1">android:text</span><span class="s2">=&quot;Female&quot;</span>
+              <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_gen_female&quot;</span>
+              <span class="s0">/&gt;</span>
+          &lt;RadioButton
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Other&quot;</span>
+              <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_gen_other&quot;</span>
+                <span class="s0">/&gt;</span>
+        &lt;/RadioGroup&gt;
+        &lt;RelativeLayout
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span>
+            <span class="s0">&gt;</span>
+
+        &lt;TextView
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;180dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/disease&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Please Select disease&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span><span class="s0">/&gt;</span>
+
+       &lt;Spinner
+           <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+           <span class="s1">android:layout_height</span><span class="s2">=&quot;28dp&quot;</span>
+           <span class="s1">android:id</span><span class="s2">=&quot;@+id/symptoms&quot;</span>
+           <span class="s1">android:layout_toEndOf</span><span class="s2">=&quot;@+id/disease&quot;</span>
+           <span class="s1">android:spinnerMode</span><span class="s2">=&quot;dropdown&quot;</span>
+           <span class="s1">android:background</span><span class="s2">=&quot;@drawable/spinner_border&quot;</span>
+           <span class="s0">/&gt;</span>
+
+        &lt;/RelativeLayout&gt;
+
+        &lt;EditText
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;200dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:hint</span><span class="s2">=&quot;Address&quot;</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_address&quot;</span>
+            <span class="s1">android:inputType</span><span class="s2">=&quot;textPostalAddress&quot;</span>
+            <span class="s1">android:textColorHint</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span><span class="s0">/&gt;</span>
+        &lt;EditText
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;200dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:hint</span><span class="s2">=&quot;Phone Number&quot;</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_phone&quot;</span>
+            <span class="s1">android:textColorHint</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s1">android:inputType</span><span class="s2">=&quot;phone&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span><span class="s0">/&gt;</span>
+        &lt;RelativeLayout
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;15dp&quot;</span><span class="s0">&gt;</span>
+
+
+            &lt;TextView
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;180dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/stage&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Stage of disease&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span><span class="s0">/&gt;</span>
+
+            &lt;Spinner
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;28dp&quot;</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/stage_score&quot;</span>
+                <span class="s1">android:layout_toEndOf</span><span class="s2">=&quot;@+id/stage&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/spinner_border&quot;</span><span class="s0">/&gt;</span>
+
+        &lt;/RelativeLayout&gt;
+
+        &lt;Button
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;150dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Suggest Med&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot;</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/pat_submit&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/gradient_darkblue&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;80dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+    &lt;/LinearLayout&gt;
+&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</pre>
+</body>
+</html>
