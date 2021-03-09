@@ -26,3 +26,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+task copyToLib(type: Copy) {
+    into "$buildDir/libs"
+    from(configurations.compile.dependencies)
+}
+stage.dependsOn(copyToLib)
