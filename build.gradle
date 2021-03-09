@@ -28,6 +28,6 @@ task clean(type: Delete) {
 }
 task copyToLib(type: Copy) {
     into "$buildDir/libs"
-    from(configurations.compile.dependencies)
+    from(configurations.compile)
 }
 stage.dependsOn(copyToLib)
